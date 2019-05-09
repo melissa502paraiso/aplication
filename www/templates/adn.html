@@ -1,0 +1,15 @@
+<ion-view view-title="steekapp">
+  <ion-content class="padding">
+    <h2>ADN</h2>
+    <P>El ácido desoxirribonucleico, abreviado como ADN, siempre es un ácido nucleico que contiene las instrucciones genéticas usadas en el desarrollo y funcionamiento de todos los organismos vivos y algunos virus; también es responsable de la transmisión hereditaria.</P>
+    <p>Desde el punto de vista químico, el ADN es un polímero de nucleótidos, es decir, un polinucleótido. Cada nucleótido, a su tiempo, está formado por un glúcido (la desoxirribosa), una base nitrogenada (que puede ser adenina→A, timina→T, citosina→C o guanina→G) y un grupo fosfato (derivado del ácido fosfórico). Lo que distingue a un polinucleótido de otro es, entonces, la base nitrogenada, y por ello la secuencia del ADN se especifica nombrando solo la secuencia de sus bases. La disposición secuencial de estas cuatro bases a lo largo de la cadena es la que codifica la información genética, siguiendo el siguiente criterio de complementariedad: A-T y G-C. Esto se debe a que la adenina y la guanina son de mayor tamaño que la timina y la citosina, por lo que este criterio permite cumplir una uniformidad. En los organismos vivos, el ADN se presenta como una doble cadena de nucleótidos, en la que las dos hebras están unidas entre sí por unas conexiones denominadas puentes de hidrógeno.1​</p>
+    <div class="site-canvas" id="app">
+  <div class="dna">
+    <div class="dna_section" v-for="(dna,i) in sequence">
+      <div class="node top" v-bind:style="{'animation-delay' : (i * -300) + 'ms' }"></div>
+      <div class="node bottom" v-bind:style="{'animation-delay' : (i * -300) + 'ms' }"></div>
+    </div>
+  </div>
+</div>
+  </ion-content>
+</ion-view>
